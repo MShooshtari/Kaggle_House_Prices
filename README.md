@@ -11,7 +11,7 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 
 **Pre Process**
 - [X] Categorical vs Numerical Data
-- [ ] Clean the numeric converted data (Null, Range, etc...)
+- [X] Clean the numeric converted data (Null, Range, etc...)
 - [ ] Outlier detection
 - [ ] Normalization
 - [ ] Variable correlation
