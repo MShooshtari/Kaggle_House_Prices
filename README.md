@@ -13,8 +13,9 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 - [X] Categorical vs Numerical Data
 - [X] Clean the numeric converted data (Null, Range, etc...)
 - [X] Outlier detection
-- [ ] Normalization
-- [ ] Variable correlation
+- [ ] Skewed data transformation
+- [X] Normalization
+- [X] Variable correlation
 - [ ] Dimensionality reduction
    - [ ] PCA ?
    - [ ] Incremental, decremental feature selection?
