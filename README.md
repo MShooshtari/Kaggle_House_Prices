@@ -29,9 +29,9 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 
 **Results**
 
-| Methods | Normalized Data without PCA | Normalized Data with PCA |
-| ------ | ------ | ------ |
-| Linear Regression | 0.5 | 0.5 |
-| XGBoost | 0.5 | 0.5 |
-| Random Forest | 0.5 | 0.5 |
-| ANN | 0.5 | 0.5 |
+| Methods | File Name | Normalized Data without PCA | File Name | Normalized Data with PCA |
+| ------ | ------ | ------ | ------ | ------ |
+| Linear Regression | Lin_reg_WO_PCA.csv | 0.61590 | - | 0.5 |
+| XGBoost | - | 0.5 | - | 0.5 |
+| Random Forest | - | 0.5 | - | 0.5 |
+| ANN | - | 0.5 | - | 0.5 |
