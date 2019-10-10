@@ -22,7 +22,7 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 
 
 **Main Process**
-- [ ] Linear regression
+- [X] Linear regression
 - [ ] XGBoost regression
 - [ ] Random Forest regression
 - [ ] Artificial Neural Network regression
