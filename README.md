@@ -19,3 +19,18 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 - [X] Dimensionality reduction
    - [X] PCA
    - [ ] Incremental, decremental feature selection?
+
+
+**Main Process*
+- [ ] Linear regression
+- [ ] XGBoost regression
+- [ ] Random Forest regression
+- [ ] Artificial Neural Network regression
+
+**Results**
+Methods|Normalized Data without PCA | Normalized Data with PCA|
+|------|------|------|
+|Linear Regression|0.5|0.5|
+|XGBoost|0.5|0.5|
+|Random Forest|0.5|0.5|
+|ANN|0.5|0.5|
