@@ -16,6 +16,6 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 - [ ] Skewed data transformation
 - [X] Normalization
 - [X] Variable correlation
-- [ ] Dimensionality reduction
-   - [ ] PCA ?
+- [X] Dimensionality reduction
+   - [X] PCA
    - [ ] Incremental, decremental feature selection?
