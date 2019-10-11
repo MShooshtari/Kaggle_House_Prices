@@ -9,7 +9,8 @@ Practice Skills Creative feature engineering Advanced regression techniques like
 Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
 
 
- Model | File | score 
---- | --- | ---  
-Linear Regression | submission.csv | 0.45817 
---- | --- | --- 
+ Model | File | score | Changes
+--- | --- | ---  | ---
+Linear Regression | submission.csv | 0.45817 | all features
+--- | --- | ---  | ---
+Linear Regression | submission_2.csv | 0.45701 | removed more than 85% missing or zeros
