@@ -24,6 +24,7 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 **Main Process**
 - [X] Linear regression
 - [X] XGBoost regression
+	- [ ] Grid Search
 - [ ] Random Forest regression
 - [ ] Artificial Neural Network regression
 
@@ -34,4 +35,4 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 | Linear Regression | Lin_reg_WO_PCA.csv | 0.61590 | Lin_reg_W_PCA.csv | 0.61248 |
 | XGBoost | XGBoost_reg_WO_PCA | 0.46689 | XGBoost_reg_W_PCA | 0.48262 |
 | Random Forest | - | 0.5 | - | 0.5 |
-| ANN | - | 0.5 | - | 0.5 |
+| ANN | ANN_reg_WO_PCA | 0.20036 | - | 0.5 |
