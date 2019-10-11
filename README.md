@@ -7,3 +7,10 @@ With 79 explanatory variables describing (almost) every aspect of residential ho
 Practice Skills Creative feature engineering Advanced regression techniques like random forest and gradient boosting
 
 Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
+
+
+ Model | File | score | Changes
+--- | --- | ---  | ---
+Linear Regression | submission.csv | 0.45817 | all features
+Linear Regression | submission_2.csv | 0.45701 | removed more than 85% missing or zeros
+XGBoost | submission_3.csv | 0.44695 | removed more than 85% missing or zeros
