@@ -34,5 +34,5 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 | ------ | ------ | ------ | ------ | ------ |
 | Linear Regression | Lin_reg_WO_PCA | 0.61590 | Lin_reg_W_PCA | 0.61248 |
 | XGBoost | XGBoost_reg_WO_PCA | 0.46689 | XGBoost_reg_W_PCA | 0.48262 |
-| Random Forest | RF_reg_WO_PCA | 1.72322 | - | - |
+| Random Forest | RF_reg_WO_PCA | 0.172322 | - | - |
 | ANN | ANN_reg_WO_PCA | 0.16323 | ANN_reg_W_PCA | 0.18499 |
