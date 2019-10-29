@@ -27,6 +27,9 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 	- [ ] Grid Search
 - [X] Random Forest regression
 - [X] Artificial Neural Network regression
+- [X] Combining (averaging) results
+	- [X] ANN & RF
+- [ ] Ensemble
 
 **Results**
 
@@ -36,3 +39,4 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 | XGBoost | XGBoost_reg_WO_PCA | 0.46689 | XGBoost_reg_W_PCA | 0.48262 |
 | Random Forest | RF_reg_WO_PCA | 0.172322 | - | - |
 | ANN | ANN_reg_WO_PCA | 0.16323 | ANN_reg_W_PCA | 0.18499 |
+| Average of ANN & RF | ANN_&_RF_WO_PCA | 0.15605 | - | - |
