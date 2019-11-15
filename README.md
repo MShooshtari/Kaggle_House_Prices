@@ -13,7 +13,7 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 - [X] Categorical vs Numerical Data
 - [X] Clean the numeric converted data (Null, Range, etc...)
 - [X] Outlier detection
-- [ ] Skewed data transformation
+- [X] Skewed data transformation
 - [X] Normalization
 - [X] Variable correlation
 - [X] Dimensionality reduction
@@ -29,14 +29,26 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 - [X] Artificial Neural Network regression
 - [X] Combining (averaging) results
 	- [X] ANN & RF
-- [ ] Ensemble
+- [X] Ensemble
+- [X] Stacking
 
 **Results**
 
-| Methods | File | Normalized without PCA | File | Normalized with PCA |
-| ------ | ------ | ------ | ------ | ------ |
-| Linear Regression | Lin_reg_WO_PCA | 0.61590 | Lin_reg_W_PCA | 0.61248 |
-| XGBoost | XGBoost_reg_WO_PCA | 0.46689 | XGBoost_reg_W_PCA | 0.48262 |
-| Random Forest | RF_reg_WO_PCA | 0.172322 | - | - |
-| ANN | ANN_reg_WO_PCA | 0.16323 | ANN_reg_W_PCA | 0.18499 |
-| Average of ANN & RF | ANN_&_RF_WO_PCA | 0.15605 | - | - |
+| Methods | File | Score |
+| ------ | ------ | ------ |
+| Linear Regression | Lin_reg_WO_PCA | 0.61590 |
+| XGBoost | XGBoost_reg_WO_PCA | 0.46689 |
+| Random Forest | RF_reg_WO_PCA | 0.172322 |
+| ANN | ANN_reg_WO_PCA | 0.16323 |
+| Average of ANN & RF | ANN_&\_RF_WO_PCA | 0.15605 |
+| LassoLarsIC | LassoLarsIC | 0.17450 |
+| ElasticNet_transformed | ElasticNet_transformed | 0.82561 |
+| ElasticNet | ElasticNet | 0.20401 |
+| BayesianRidge_transformed | BayesianRidge_transformed | 0.82334 |
+| BayesianRidge | BayesianRidge | 0.18784 |
+| GradientBoostingRegressor_transformed | GradientBoostingRegressor_transformed | 0.13962 | 
+| XGBRegressor_transformed | XGBRegressor_transformed | 0.14549 |
+| ---- | ---- | ---- |
+| Stacking (Metamodel = RF) | RandomForestRegressor_final | 0.13485 |
+| Stacking (Metamodel = XGB) | XGBRegressor_final | 0.13672 |
+| Stacking (Average of Metamodels) | Average_of_MetaModels | 0.13827 |
