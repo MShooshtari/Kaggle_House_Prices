@@ -36,7 +36,7 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 - [X] Ensemble
 - [X] Stacking
 
-![New](./Stacking.jpg)
+![New](https://github.com/MShooshtari/Kaggle_House_Prices/tree/mahdi_branch/Stacking.jpg)
 
 **Results**
 
