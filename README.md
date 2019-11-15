@@ -27,6 +27,10 @@ Link to the Kaggle Competition: https://www.kaggle.com/c/house-prices-advanced-r
 	- [ ] Grid Search
 - [X] Random Forest regression
 - [X] Artificial Neural Network regression
+- [X] Lasso Lars IC
+- [X] Elastic Net
+- [X] Bayesian Ridge
+- [X] Gradient Boosting
 - [X] Combining (averaging) results
 	- [X] ANN & RF
 - [X] Ensemble
