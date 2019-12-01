@@ -23,13 +23,13 @@ X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3, random_st
 
 
 
-##### Mahdi's approach
-
+##### Mahdi's approach #####
+############################
 # Extra information:
-# Some extra information required for running the preprocess steps is mentioned in Extra_Information_Mahdi.py
+# Some extra information required for running the preprocess steps are mentioned in Extra_Information_Mahdi.py
 	# List of descrete nomainal features
 	# List of descrete ordinal features
-	# Dictionary address for converting categorical to nominal
+	# Dictionary address for converting nominal categorical to ordinal
 from mahdi import Extra_Information as EIM
 descreteVars_Nominal = EIM.descreteVars_Nominal
 descreteVars_Ordinal = EIM.descreteVars_Ordinal
@@ -43,15 +43,11 @@ dict_address = EIM.dict_address
 	# CleanNum: Clean numeric table from None, nan and replace those with average or mode.
 		# Input: Numeric data (It will give you an in cases such as categorical data)
 		# Output: Numeric data (without nulls)
-	# Outlier Detection: Removing outliers that are more or less than 'n' times of variation (default 'n' is 3).
-		# Input: Numeric data (without nulls)
-		# Output: Numeric data (without outliers)
 	# Data Transformation: Transforming skewed features using box-cox transformation
 		# Input: Numeric data (without outliers)
 		# Output: Numeric data (transformed)
 from mahdi.preprocess import CatToNum
 from mahdi.preprocess import CleanNum
-from mahdi.preprocess import OutlierDetection
 from mahdi.preprocess import DataTransformation
 from sklearn.preprocessing import RobustScaler # It can be replaced by other types of scalers such as min-max
 preprocess_steps = []
@@ -105,3 +101,5 @@ print(Y_pred.shape)
 Y_pred = pipeline.predict(test_df)
 print(Y_pred)
 print(Y_pred.shape)
+############################
+############################
