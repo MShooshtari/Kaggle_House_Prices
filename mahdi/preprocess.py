@@ -1,3 +1,5 @@
+import numpy as np 
+import pandas as pd 
 import json 
 import category_encoders as ce
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -96,38 +98,46 @@ class CleanNum(BaseEstimator, TransformerMixin):
 # Outlier Detection
 class OutlierDetection(BaseEstimator, TransformerMixin):
 
-    def __init__(self):
-        pass
+    def __init__(self, cut_off_thresh=5):
+        self.cut_off_thresh = cut_off_thresh
 
         # Function to Detection Outlier on one-dimentional datasets.
-    def find_anomalies(self,data):
-        anomalies_idx = []
-        # Set upper and lower limit to 3 standard deviation
+    def find_boundaries(self,data):
+        # Set upper and lower limit to 3 (cut_off_thresh) standard deviation
         data_std = data.std()
         data_mean = data.mean()
-        anomaly_cut_off = data_std * 3
+        anomaly_cut_off = data_std * self.cut_off_thresh
 
         lower_limit  = data_mean - anomaly_cut_off 
         upper_limit = data_mean + anomaly_cut_off
-        # Generate outliers
-        for idx in range(len(data)):
-            outlier = data[idx]
-            if outlier > upper_limit or outlier < lower_limit:
-                anomalies_idx.append(idx)
-        return anomalies_idx
+        return (lower_limit, upper_limit)
 
     def fit(self, X, y=None):
         train_df = X.copy()
-        outliers_full_list = []
+        train_df.reset_index(drop=True, inplace=True)
+        self.valid_data_boundary = dict()
         for feature in train_df:
-            outliers_full_list = outliers_full_list + self.find_anomalies(train_df[feature].values)
-
-        self.outliers_unique = list(set(int(outliers_full_list)))
+            self.valid_data_boundary[feature] = self.find_boundaries(train_df[feature].values)
         return self
 
     def transform(self, X):
         totalDF = X.copy()
-        totalDF.drop(self.outliers_unique, inplace=True)
+        totalDF.reset_index(drop=True, inplace=True)
+
+        anomalies_idx = []
+        for feature in totalDF:
+            temp_col = totalDF[feature]
+            (lower_limit, upper_limit) = self.valid_data_boundary[feature]
+
+            # Generate outliers
+            for idx in range(len(temp_col)):
+                outlier = temp_col[idx]
+                if outlier > upper_limit or outlier < lower_limit:
+                    anomalies_idx.append(idx)
+
+        outliers_unique = list(set(anomalies_idx))
+        
+        totalDF.drop(outliers_unique, inplace=True)
         return totalDF
 
 
