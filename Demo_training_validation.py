@@ -23,8 +23,8 @@ X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3, random_st
 
 
 
-##### Mahdi's approach
-
+##### Mahdi's approach #####
+############################
 # Extra information:
 # Some extra information required for running the preprocess steps are mentioned in Extra_Information_Mahdi.py
 	# List of descrete nomainal features
@@ -101,3 +101,5 @@ print(Y_pred.shape)
 Y_pred = pipeline.predict(test_df)
 print(Y_pred)
 print(Y_pred.shape)
+############################
+############################
