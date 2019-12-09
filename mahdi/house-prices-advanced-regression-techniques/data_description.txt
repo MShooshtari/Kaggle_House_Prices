@@ -362,6 +362,8 @@ Electrical: Electrical system
  
 2ndFlrSF: Second floor square feet
 
+BedroomAbvGr : Number of bedrooms above garage
+
 LowQualFinSF: Low quality finished square feet (all floors)
 
 GrLivArea: Above grade (ground) living area square feet

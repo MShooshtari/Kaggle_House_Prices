@@ -80,7 +80,7 @@ class CleanNum(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X):
-        totalDF = X.copy().astype(float)
+        totalDF = X.copy().replace('', np.nan).astype(float)
         
         # Replace null values with average (or mode) of the train columns
         for col in totalDF:
